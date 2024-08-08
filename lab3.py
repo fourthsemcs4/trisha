@@ -1,10 +1,8 @@
 from matplotlib import pyplot as p
-Q=["Q1","Q2","Q3","Q4"]
-ssd=[200,230,350,400]
-hdd=[250,240,320,250]
-p.plot(Q,ssd,'^-',color='green')
-p.plot(Q,hdd,'o-.b')
-p.xlabel("quarters in 2022"),p.ylabel("sales units")
-p.title("sdd & hdd sales in store")
-p.legend(['sdd','hdd'])
+import numpy as n
+x=n.random.normal(180,5,200)
+p.hist(x,color='red')
+p.xlabel("height in cm"),p.ylabel("people")
+p.title("height of 200 people")
+>>>>>>> f38c4406717eb7ed4f6577e26d3c2ffe1b3c851d
 p.show()
